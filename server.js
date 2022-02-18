@@ -4,7 +4,7 @@ const path = require('path');
 const api = require('./routes/routes')
 
 const app = express();
-const PORT = process.env.port || 3001;
+const PORT = process.env.port || 3000;
 
 //Middleware
 app.use(express.json());
