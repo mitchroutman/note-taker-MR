@@ -26,4 +26,9 @@ router.post('/notes', function(req, res) {
     })
 })
 
+router.delete("/api/notes/:id", function(req, res) {
+    notes.splice(req.params.id, 1);
+    console.log("Deleted note with id "+req.params.id);
+});
+
 module.exports = router;
